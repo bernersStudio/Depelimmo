@@ -1,0 +1,459 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+header,nav,article,section,aside,footer{
+    display: block;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+/*centering website*/
+.container {
+    width: 1263%;
+    margin: 0px auto;
+}
+
+.clear {
+    clear: both;
+}
+
+/*@media screen and (max-width: 1262px){
+    .container {
+        width: 100%;
+    }
+    .logo {
+        width: 20%
+    }
+    .top_nav {
+        width: 80%;
+    }
+    .left_side {
+        width: 70%;
+    }
+    .right_side{
+        width: 30%;
+    }
+    .page_footer {
+        width: 100%;
+    }
+}*/
+
+/*logo*/
+.logo {
+    display: block;
+    height: 80px;
+    width: 200px;
+    max-width: 100%;
+    float: left;
+}
+
+/*styling the top nav*/
+/*the blue part specifications*/
+.top_nav {
+    display: block;
+    position: relative;
+    background-image: url(indeximg/navback.png);
+    font: bold 16px sans-serif;
+    float: left;
+    height: 80px;
+    width: 1045px;
+    max-width: 100%;
+}
+
+.top_navItems {
+    width: 100%;
+    height: 25px;
+    margin-top: 30px;
+}
+
+.top_navItemsContent>a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: 25px;
+    margin-left: 20px;
+}
+
+.top_navItemsContent2>a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    float: right;
+    margin-top: -25px;
+    margin-right: 40px;
+}
+
+.arrow_up {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #fff;
+    left: 90px;
+    top: 50px;
+    display: none;
+}
+
+.arrow_up2 {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #fff;
+    left: 500px;
+    top: 50px;
+    display: none ;
+}
+
+.Departement_menu {
+    position: absolute;
+    width: 120px;
+    height: auto;
+    background: #fff;
+    left: 50px;
+    top: 70px;
+    border-radius: 3px;
+    border-bottom: 5px;
+    display: none;
+    z-index: 9;
+}
+
+.Departement_menu>form {
+    width: 250px;
+    margin: 10px auto;
+    font-size: 17px;
+    font-family: sans-serif;
+    color: gray;
+    letter-spacing: -0.05em;
+    margin-left: 20px;
+}
+
+.compte_menu  {
+    position: absolute;
+    width: 110px;
+    height: auto;
+    background: #fff;
+    left: 465px;
+    top: 70px;
+    border-radius: 3px;
+    border-bottom: 5px;
+    display: none;
+    z-index: 9;
+}
+
+.compte_menu>form {
+    width: 250px;
+    margin: 10px auto;
+    font-size: 17px;
+    font-family: sans-serif;
+    color: gray;
+    letter-spacing: -0.05em;
+    margin-left: 5px;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+/*carousel*/
+.css_carousel {
+    overflow: hidden;
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-bottom: 450px;
+}
+
+.css_carousel .css-img {
+    border-radius: 0px;
+    width: 100%;
+    height: 500px;
+    max-width: 100%;
+    max-height: 500px;
+    position: absolute;
+    margin-top: -70px;
+    margin-left: -5px;
+    opacity: 0;
+    -webkit-animation-name: css-animation-fade;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: css-animation-fade;
+    -moz-animation-duration: 30s;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-name: css-animation-fade;
+    -o-animation-duration: 30s;
+    -o-animation-iteration-count: infinite;
+}
+
+.css_carousel .css-img:nth-child(2) {
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s;
+    -o-animation-delay: 5s;
+    animation-delay: 5s;
+}
+
+.css_carousel .css-img:nth-child(3) {
+    -webkit-animation-delay: 10s;
+    -moz-animation-delay: 10s;
+    -o-animation-delay: 10s;
+    animation-delay: 10s;
+}
+
+.css_carousel .css-img:nth-child(4) {
+    -webkit-animation-delay: 15s;
+    -moz-animation-delay: 15s;
+    -o-animation-delay: 15s;
+    animation-delay: 15s;
+}
+
+.css_carousel .css-img:nth-child(5) {
+    -webkit-animation-delay: 20s;
+    -moz-animation-delay: 20s;
+    -o-animation-delay: 20s;
+    animation-delay: 20s;
+}
+
+.css_carousel .css-img:nth-child(6) {
+    -webkit-animation-delay: 25s;
+    -moz-animation-delay: 25s;
+    -o-animation-delay: 25s;
+    animation-delay: 25s;
+}
+
+
+@-webkit-keyframes css-animation-fade {
+    from {opacity: 0;}
+    5% {opacity: 1;}
+    15% {opacity: 1;}
+    20% {opacity: 0;}
+    to {opacity: 0;}
+}
+
+@-moz-keyframes css-animation-fade {
+    from {opacity: 0;}
+    5% {opacity: 1;}
+    15% {opacity: 1;}
+    20% {opacity: 0;}
+    to {opacity: 0;}
+}
+
+@-ms-keyframes css-animation-fade {
+    from {opacity: 0;}
+    5% {opacity: 1;}
+    15% {opacity: 1;}
+    20% {opacity: 0;}
+    to {opacity: 0;}
+}
+
+@-o-keyframes css-animation-fade {
+    from {opacity: 0;}
+    5% {opacity: 1;}
+    15% {opacity: 1;}
+    20% {opacity: 0;}
+    to {opacity: 0;}
+}
+
+
+/*float aside, main section*/
+.left_side{
+    float:left;
+    width: 600px;
+    padding: 70px 5px;
+}
+
+
+.right_side {
+    float: right;
+    width: 450px;
+    padding: 520px 0px;
+}
+
+
+.left_side article{
+    border: 2px;
+    margin-right: 10px;
+    margin-left: 0em;
+    margin-top: 25px;
+    padding: 0px 50px;
+    background-image: url(indeximg/nav.png);
+    width: 600px;
+}
+.left_side h1{
+    font-family: sans-serif;
+    font-size: 22px;
+    color: rgb(23, 55, 94);
+    margin-top: 1em;
+    margin-left: -2.3em;
+    background-image: url(indeximg/greyback.png);
+    height: 30px;
+    width: 700px;
+}
+.left_side h2{
+    font-family: sans-serif;
+    font-size: 25px;
+    color: black;
+    margin-top: 3px;
+    margin-left: -2em;
+}
+
+.left_side h3 {
+    font-family: sans-serif;
+    margin-left: -2em;
+    font-size: 15px;
+}
+
+.left_side article img {
+    height: 450px;
+    width: 680px;
+    margin-top: 0em;
+    margin-left: -2.7em;
+}
+
+.left_side footer{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgb(23, 55, 94);
+    margin-left: 0px;
+}
+
+
+.right_side  div{
+    border: 2px;
+    margin: 0px 0px 10px 0px;
+}
+
+
+.right_side h1{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgb(23, 55, 94);
+    margin-top: 0em;
+    margin-right: -20em;
+    background-image: url(indeximg/greyback.png);
+    height: 30px;
+    width: 450px;
+}
+
+
+.right_side h2{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+
+.right_side img{
+    height: 40px;
+    width: 40px;
+}
+.right_side h3{
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+
+.right_side p{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+
+
+/*make footer float elements*/
+.page_footer{
+    clear:both;
+    text-align: center;
+}
+
+/*styling the footer*/
+.page_footer{
+    display: block;
+    position: relative;
+    background-image: url(indeximg/navback.png);
+    border: 1px;
+    font: bold 16px sans-serif;
+    height: 200px;
+    width: 100%;
+}
+
+
+/*footer links on the same line*/
+.page_footer li{
+    position: relative;
+    list-style-type: none;
+}
+
+
+.page_footer ul li{
+    float: right;
+    padding: 3px 15px;
+}
+
+/*page_footer links text*/
+.page_footer li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 60px;
+    font-family: sans-serif;
+}
+
+
+/*hovering specs*/
+.page_footer li a:hover{
+    color: red;
+}
+
+
+.page_footer li:hover ul{
+    display: block;
+}
+
+
+.page_footer ul:after{
+    content:".";
+    display: block;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+}
+
+
+.page_footer ul ul{
+    position: absolute;
+    display: block;
+    left: 0px;
+}
+
+
+
+/*drop-down style*/
+.page_footer ul ul li{
+    border: 1px;
+    height: 30px;
+    width: 70%;
+    background-color: rgb(23, 55, 94);
+}
+
+
+/*drop-down menu text specs*/
+.page_footer ul ul li a{
+    color: white;
+    text-align: left;
+    padding: 10px 26.9px;
+    margin-top: -10px;
+}
+
+.page_footer h3{
+    color: white;
+    margin-top: 80px;
+    text-align: center;
+
+}

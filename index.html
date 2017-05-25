@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>le shop experiment</title>
+    <link rel="stylesheet" href="main.css" type="text/css"/>
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript"></script>
+    <title></title>
+</head>
+<body>
+<img src="indeximg/logo.jpg" alt="logo area" class="logo">
+<header>
+<div class="top_nav">
+    <aside class="top_navItems">
+        <div class="top_navItemsContent">
+            <i class="fa fa-unlock-alt"> </i> <a href="#" id="Departement">Propriétés Par Zone</a>
+            <i class="fa fa-unlock-alt"> </i> <a href="#">Catalogue Complet</a>
+            <i class="fa fa-unlock-alt"> </i> <a href="#" id="compte">Que Souhaitez-Vous ?</a>
+            <i class="fa fa-unlock-alt"> </i> <a href="#">Besoin D'aide?</a>
+            <i class="fa fa-unlock-alt"> </i> <a href="#">Qui Sommes-Nous?</a>
+        </div>
+        <div class="arrow_up"></div>
+        <div class="arrow_up2"></div>
+    </aside>
+    <div class="Departement_menu">
+        <form>
+            <div>
+                <a href="#" style="text-decoration:none;position:relative;top:0px;font-size:17px;color:rgb(23, 55, 94);">Gombe</a>
+            </div>
+            <div>
+                <a href="#" style="text-decoration:none;position:relative;top:5px;font-size:17px;color:rgb(23, 55, 94);">Centre Ville</a>
+            </div>
+            <div>
+                <a href="#" style="text-decoration:none;position:relative;top:10px;font-size:17px;color:rgb(23, 55, 94);">Ngaliema</a>
+            </div>
+        </form>
+    </div>
+    <div class="compte_menu">
+        <form>
+            <div>
+                <a href="#" style="text-decoration:none;position:relative;top:0px;font-size:16px;color:rgb(23, 55, 94);">Acheter</a>
+            </div>
+            <div>
+                <a href="#" style="text-decoration:none;position:relative;top:10px;font-size:16px;color:rgb(23, 55, 94);">Vendre</a>
+            </div>
+        </form>
+    </div>
+</div>
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        var arrow = $(".arrow_up");
+        var form = $(".Departement_menu");
+        var status = false;
+        $("#Departement").click(function (event) {
+            event.preventDefault();
+            if (status == false) {
+                arrow.fadeIn();
+                form.fadeIn();
+                status = true;
+            } else {
+                arrow.fadeOut();
+                form.fadeOut();
+                status = false;
+            }
+        })
+    })
+    $(document).ready(function(){
+        var arrow = $(".arrow_up2");
+        var form = $(".compte_menu");
+        var status = false;
+        $("#compte").click(function(event){
+            event.preventDefault();
+            if(status == false) {
+                arrow.fadeIn();
+                form.fadeIn();
+                status = true;
+            } else {
+                arrow.fadeOut();
+                form.fadeOut();
+                status = false;
+            }
+        })
+    })
+
+
+</script>
+
+<div class="clear"></div>
+
+</header>
+
+<section class="left_side">
+
+    <div class="css_carousel">
+        <img src="indeximg/logo.jpg" class="css-img"/>
+        <img src="indeximg/kin2.jpg" class="css-img"/>
+        <img src="indeximg/kin3.jpg" class="css-img"/>
+        <img src="indeximg/kin10.jpg" class="css-img"/>
+        <img src="indeximg/kin5.jpg" class="css-img"/>
+        <img src="indeximg/kin6.jpg" class="css-img"/>
+    </div>
+
+    <article>
+
+        <header>
+            <h1> Actualités</h1>
+            <h2> De l'innovation dans l'immobilier congolais </h2>
+            <h3> publiés Le 24 Mai 2017 A 18H04</h3>
+        </header>
+        <img src="indeximg/rdc.gif">
+        <footer>
+            En Savoir Plus
+        </footer>
+
+    </article>
+
+
+    <article>
+
+        <header>
+            <h2> Villa Neuf A Gombe </h2>
+            <h3> publiés Le 24 Mai 2017 A 15H17</h3>
+        </header>
+        <img src="indeximg/m.jpg">
+        <footer>
+            En Savoir Plus
+        </footer>
+
+    </article>
+
+    <article>
+
+        <header>
+            <h2> Maison A Joli-Parc </h2>
+            <h3> publiés Le 24 Mai 2017 A 15H02</h3>
+        </header>
+        <img src="indeximg/m2.jpg">
+        <footer>
+            En Savoir Plus
+        </footer>
+
+    </article>
+
+    <article>
+
+        <header>
+            <h2> Batiment Sur Le Boulevard Du 30 Juin </h2>
+            <h3> publiés Le 24 Mai 2017 A 14H35</h3>
+        </header>
+        <img src="indeximg/m3.jpg">
+        <footer>
+            En Savoir Plus
+        </footer>
+
+    </article>
+
+    <article>
+
+        <header>
+            <h2> Immeuble De Bureau Neuf A Gombe   </h2>
+            <h3> publiés Le 23 Mai 2017 A 12H28</h3>
+        </header>
+        <img src="indeximg/m4.jpg">
+        <footer>
+            En Savoir Plus
+        </footer>
+
+    </article>
+
+
+</section>
+
+
+
+
+<aside class="right_side">
+
+    <div>
+        <h1>Autres Info</h1>
+        <h2>  Depelchin Immobilier Sur Les Réseaux Sociaux </h2>
+        <img src="indeximg/fb.png"><a href="">Facebook</a>
+        <img src="indeximg/tt.png"><a href="">Twitter</a>
+    </div>
+
+    <div>
+        <h2> Suivez Notre Actualités</h2>
+        <article>
+            <h3>  </h3>
+            <p> </p>
+            <footer>
+                <a href="">En Savoir Plus </a>
+            </footer>
+        </article>
+    </div>
+
+</aside>
+
+
+<footer class="page_footer">
+
+    <ul>
+        <li><a href="">Qui Sommes-nous ? </a></li>
+        <li><a href="">Besoin D'aide</a></li>
+        <li><a href="">Que Souhaitez-Vous ?</a>
+            <ul>
+                <li><a href="">Acheter</a></li>
+                <li><a href="">Vendre</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Propriétés Par Zone</a>
+            <ul>
+                <li><a href="">Gombe</a></li>
+                <li><a href="">Centre Ville</a></li>
+                <li><a href="">Ngaliema</a></li>
+            </ul>
+        </li>
+        <li><a href="index.html"></a></li>
+    </ul>
+
+    <div class="clear"></div>
+
+    <h3>&copy;2017 Depelchin Immobilier. Tout Droits Réservés.</h3>
+
+</footer>
+
+</body>
+</html>
